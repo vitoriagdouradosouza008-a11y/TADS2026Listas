@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Média do Semestre</title>
+</head>
+<body>
+    
+  <h1>A Média do Semestre!</h1>
+  <p>Espero que você tenha passado de ano!</p>
+
+  <script>
+    let nome = prompt("Digite o nome do aluno:");
+    let nota1 = prompt("Digite a primeira nota:");
+    let nota2 = prompt("Digite a segunda nota:");
+    let nota3 = prompt("Digite a terceira nota:");
+    let media = (Number(nota1) + Number(nota2) + Number(nota3)) / 3;
+    let resultado = media >= 7 ? "Aprovado, Parabens!" : "Reprovado, Estude mais!";
+    alert("O aluno " + nome + " tem a média " + media.toFixed(2) + " e está " + resultado + "!");   
+  </script>
+
+</body>
+</html>
