@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar (Aprovado ou Reprovado)</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+  <h1>Boletim Escolar (Aprovado ou Reprovado)</h1>
+  <p>SEMPRE ESTUDE!</p>
+
+  <script>
+    let nota = Number(prompt("Digite a nota do aluno:"));
+    if(nota >= 7){
+        alert("Parabéns! Você foi aprovado!");
+    } else if (nota >= 5 && nota < 6.9) {
+        alert("Você ficou em recuperação. Estude para a recuperação!");
+    } else {
+        alert("Infelizmente, você foi reprovado. Estude mais na proxima!");
+    }
+  </script>
+
+</body>
+</html>

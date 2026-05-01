@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É um Triângulo?</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+  <h1>É um Triângulo?</h1>
+  <p>Descubra se os lados formam um triângulo!</p>
+
+  <script>
+    // Triâgulo Equilátero: todos os lados iguais
+    // Triângulo Isósceles: dois lados iguais
+    // Triângulo Escaleno: todos os lados diferentes
+    let ladoA = Number(prompt("Digite o comprimento da reta A:"));
+    let ladoB = Number(prompt("Digite o comprimento da reta B:"));
+    let ladoC = Number(prompt("Digite o comprimento da reta C:(o comprimento da C deve ser menor que a soma dos comprimentos das retas A e B)"));
+
+    if (ladoA < ladoB + ladoC && ladoB < ladoA + ladoC && ladoC < ladoA + ladoB) {
+      if (ladoA === ladoB && ladoB === ladoC) {
+        alert("É um Triângulo Equilátero!");
+      } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+        alert("É um Triângulo Isósceles!");
+      } else {
+        alert("É um Triângulo Escaleno!");
+      }
+    } else {
+      alert("Os lados não formam um triângulo.");
+    }
+  </script>
+
+</body>
+</html>

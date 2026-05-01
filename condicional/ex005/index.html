@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrindo o Ano Bixesto</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <h1>Descobrindo o Ano Bissexto</h1>
+    <p>Quem nasce em 29 de fevereiro faz aniversário a cada 4 anos? 🤔</p>
+
+    <script>
+        let ano = Number(prompt("Digite um ano para verificar se é bissexto:"));
+        if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+            alert(ano + " é um ano bissexto! 🎉");
+        } else {
+            alert(ano + " não é um ano bissexto 👎");
+        }
+    </script>
+
+</body>
+</html>

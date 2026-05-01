@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O desconto da Black Friday</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  
+  <h1>O desconto da Black Friday</h1>
+  <p>15% DE DESCONTO!</p>
+
+  <script>
+    let precoOriginal = prompt("Digite o preço original do produto:");
+    // Valor do produto multiplacado por 15% e dividido por 100        
+    let desconto = (Number(precoOriginal) * 15) / 100;
+    let precoComDesconto = Number(precoOriginal) - desconto;
+    alert("O preço original do produto é R$ " + precoOriginal + ". O desconto é de R$ " + desconto.toFixed(2) + " e o preço com desconto é R$ " + precoComDesconto.toFixed(2) + ".");     
+  </script>
+
+</body>
+</html>
+ 

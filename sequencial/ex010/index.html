@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário do Dev</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   
+  <h1>Salário do Dev</h1>
+  <p>Vai sobrar dinheiro no fim do mês?</p>
+
+  <script>
+    let horasTrab = prompt("Digite o número de horas trabalhadas no mês:");
+    let valorPorHora = prompt("Digite o valor que recebe por hora:");
+    let salarioBruto = Number(horasTrab) * Number(valorPorHora);
+    let imposto = (salarioBruto * 8) / 100;
+    let salarioLiquido = salarioBruto - imposto;
+    alert("O salário bruto é R$ " + salarioBruto.toFixed(2) + ". O imposto é de R$ " + imposto.toFixed(2) + " e o salário líquido é R$ " + salarioLiquido.toFixed(2) + ".");
+  </script>
+
+</body>
+</html>

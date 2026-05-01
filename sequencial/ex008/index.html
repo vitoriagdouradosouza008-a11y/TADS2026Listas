@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A conta  do restaurante</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+  <h1>A conta do restaurante</h1>
+  <p>Garçom, a conta por favor!</p>
+
+  <script>
+    let valorConta = prompt("Digite o valor da conta do restaurante:");
+    let gorjeta = (Number(valorConta) * 10) / 100;
+    let valorComGorjeta = Number(valorConta) + gorjeta;
+    alert("O valor original da conta é R$ " + valorConta + ". A gorjeta é de R$ " + gorjeta.toFixed(2) + " e o valor total a ser pago é R$ " + valorComGorjeta.toFixed(2) + ".");
+  </script>
+    
+</body>
+</html>

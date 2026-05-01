@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+  <h1>Conversor de Moedas</h1>
+  <p>Converta o Real em Dólares💵, Euros💶 e Libras Esterlinas💷.</p>
+
+  <script>
+    let valorEmReais = prompt("Digite o valor em reais:");
+    let valorEmDolares = (Number(valorEmReais) / 5.0).toFixed(2);
+    let valoeEmEuros = (Number(valorEmReais) / 6.0).toFixed(2);
+    let valorEmLibras = (Number(valorEmReais) / 7.0).toFixed(2);
+    alert("O valor em reais é R$" + valorEmReais + ". O valor em dólares é U$" + valorEmDolares + ", o valor em euros é €" + valoeEmEuros + " e o valor em Libras é £" + valorEmLibras + ".");
+  </script>
+
+</body>
+</html>

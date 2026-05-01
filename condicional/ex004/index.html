@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudação do Sistema</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+  <h1>Saudação do Sistema</h1>
+  <p>Nosso planeta tem 38 fusos horários, mas o dia tem 24 horas!</p>
+
+  <script>
+     let hora = Number(prompt("Digite a hora atual (entre 0 e 23):"));
+    if(hora >= 0 && hora < 12){
+       alert("Bom dia! 🌅");
+    } else if (hora >= 12 && hora < 18) {
+       alert("Boa tarde! ☀️");
+    } else if (hora >= 18 && hora <= 23) {
+       alert("Boa noite! 🌙");
+    } else {
+       alert("Hora inválida! Por favor, digite um valor entre 0 e 23.");
+    }
+  </script>
+
+</body>
+</html>

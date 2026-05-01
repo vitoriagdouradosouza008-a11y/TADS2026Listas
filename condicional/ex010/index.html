@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Caixa (Formas de Pagamento)</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+  <h1>Sistema de Caixa (Formas de Pagamento)</h1>
+  <p>Um descontinho é  sempre bem-vindo!</p>
+    <div class="tenor-gif-embed" data-postid="17647965" data-share-method="host" data-aspect-ratio="1.33333" data-width="10%"><a href="https://tenor.com/view/nami-cat-burglar-one-piece-smile-happy-gif-17647965">Nami Cat Burglar GIF</a>from <a href="https://tenor.com/search/nami-gifs">Nami GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+
+  <script>
+    let valorCompra = Number(prompt("Digite o valor total da compra:"));
+    let formaPagamento = prompt("Escolha a forma de pagamento: \n1 - Pix ou Dinheiro (10% de desconto) \n2 - À vista Cartão de Crédito (5% de desconto) \n3 - Em 2x no Cartão de Crédito (preço normal) \n4 - Em 3x ou mais no Cartão de Crédito (10% de juros sobre o preço normal)");
+    let n1 = valorCompra * 0.1;
+    let n2 = valorCompra * 0.05;
+    let n3 = valorCompra == valorCompra;
+    let n4 = valorCompra * 0.1;
+    switch (formaPagamento) {
+      case "1":
+        alert(`O valor a ser pago é: R$ ${valorCompra - n1}`);
+        break;
+      case "2":
+        alert(`O valor a ser pago é: R$ ${valorCompra - n2}`);
+        break;
+      case "3":
+        alert(`O valor a ser pago é: R$ ${valorCompra * n3}`);
+        break;
+      case "4":
+        alert(`O valor a ser pago é: R$ ${valorCompra + n4}`);
+        break;
+      default:
+        alert("Forma de pagamento inválida! Por favor, escolha uma forma de pagamento válida (1, 2, 3 ou 4).");
+    }
+  </script>
+
+</body>
+</html>
