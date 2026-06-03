@@ -1,4 +1,4 @@
-function tabuada() {
+function calcularTabuada() {
     let numeroInput = document.getElementById("numero");
     let numero = Number(numeroInput.value);
     let resultado = document.getElementById("resultado");

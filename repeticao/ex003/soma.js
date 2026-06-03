@@ -1,18 +1,18 @@
-function soma() {
+function somaNumeros() {
     let numeroInput = document.getElementById("numero");
     let numero = Number(numeroInput.value);
     let resultado = document.getElementById("resultado");
 
-    if (numeroInput.value === "" || numero < 1 || numero > 50) {
-        resultado.textContent = "Digite um número entre 1 e ";
+    if (numeroInput.value === "" || numero < 1 || numero > 20) {
+        resultado.textContent = "Digite um número entre 1 e 20 ";
         return;
     }
 
-    let somaTotal = 0;
+    let soma = 0;
     let conta = "";
 
     for (let i = 1; i <= numero; i++) {
-        somaTotal += i;
+        soma += i;
 
         conta += i;
 
@@ -21,5 +21,5 @@ function soma() {
         }
     }
 
-    resultado.innerHTML = `${conta} = ${somaTotal}`;
+    resultado.innerHTML = `${conta} = ${soma}`;
 }

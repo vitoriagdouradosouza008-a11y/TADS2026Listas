@@ -1,4 +1,4 @@
-function pares() {
+function numerosPares() {
 
     let resultado = document.getElementById("resultado");
 

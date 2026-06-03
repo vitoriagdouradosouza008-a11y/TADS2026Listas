@@ -1,10 +1,14 @@
-function senha() {
-    let senha = prompt("Defina sua senha:");
+function definirSenha() {
 
-    let te = prompt("Digite a senha para entrar:");
+    let senhaDefinida = prompt("Defina sua senha:");
 
-    while () {
+    let senhaDigitada = prompt("Digite sua senha para entrar:");
 
+    while (senhaDigitada !== senhaDefinida) {
+        alert("Senha incorreta, tente novamente!");
+        senhaDefinida = prompt("Digite sua senha novamente:");
     }
+
+    alert("Acesso concedido!");
         
 }
